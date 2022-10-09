@@ -1,0 +1,53 @@
+*{
+    font-family: Roboto;
+  }
+
+.titulo {
+    align-items: center;
+    display: flex;
+    height: 110px;
+    width: 5000px;
+    position: absolute;
+    left: 32%;
+    top: 0px;
+}
+
+#caja {
+    font-size: 12px;
+    width: 650px;
+    height: 500px;
+    border-radius: 30px;
+    background: #FFFDFD;
+    left: 22%;
+    top: 10%;
+    position: relative;
+    border: 1px solid #BDBABA;
+    box-shadow: 5px 10px 10px #BDBABA;
+}
+
+#subtitulo {
+    font-size: 13px;
+    width: 600px;
+    height: 35px;
+    top: 16%;
+    padding-left: 20px; 
+}
+
+.formulario {
+    font-size: 12px;
+    color: #434353;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.boton {
+   
+    border-radius: 25px;
+    border: 1px solid #D78304;
+    background: #e08803;
+    color: white;
+  }
+#listaClientes {
+    font-size: 14px;
+    text-align: left;
+}

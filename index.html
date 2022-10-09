@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IrmaRiosReto2</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="myScript.js"></script>
+<link rel="stylesheet" href="app.css" />
+
+<header>
+    <div class="titulo">
+      <h1>Bienvenido a BikeRent</h1><br><br>
+    </div>
+</header>
+
 <body>
-    hola a todos  
+
+    <br><br><br><br>
+    <div id="caja">
+        <div id="subtitulo">
+          <h2>Registra a tu Cliente</h2>
+        </div>
+
+        <div id="registroCliente"class="formulario">
+            Id de Cliente: <input type="number" id="idCliente"><br><br>
+            Nombre y Apellido: <input type="text" id="nombreCliente"><br><br>
+            Correo electrónico: <input type="text" id="correoCliente"><br><br>
+            Edad: <input type="number" id="edadCliente"><br><br>
+                      
+            <button onclick="leerClientes()" class="boton">Traer Clientes</button>
+            <button onclick="guardarCliente()" class="boton">Registrar</button>
+            <button onclick="editarCliente()" class="boton">Actualizar dato de Cliente</button>
+        </div>
+        <div id="subtitulo">
+            <h2>Tus Clientes</h2>
+        </div>
+        
+        <div id="listaClientes">
+                   
+
+        </div>
+    </div>
+
+    <br><br>
+    <div id="caja">
+        <div id="subtitulo">
+          <h2>Registra el Vehículo</h2>
+        </div>
+
+        <div id="registroVehiculo"class="formulario">
+            Id Vehículo: <input type="number" id="idMoto"><br><br>
+            Marca: <input type="text" id="marcaMoto"><br><br>
+            Modelo: <input type="number" id="modeloMoto"><br><br>
+            Categoría: <input type="number" id="categoriaMoto"><br><br>
+            Nombre: <input type="text" id="nombreMoto"><br><br>
+                      
+            <button onclick="leerCuatrimoto()" class="boton">Ver Vehículos</button>
+            <button onclick="guardarMoto()" class="boton">Registrar</button>
+            <button onclick=" editarMoto()" class="boton">Actualizar Info Vehículo</button>
+        </div>
+        <div id="subtitulo">
+            <h2>Vehículos</h2>
+        </div>
+        
+        <div id="listaMotos">
+                   
+
+        </div>
+    </div>
+
+    <br><br>
+    <div id="caja">
+        <div id="subtitulo">
+          <h2>Mensajes</h2>
+        </div>
+
+        <div id="nuevoMenasaje"class="formulario">
+            Id: <input type="number" id="idMensaje"><br><br>
+            Mensaje: <input type="text" id="mensajeTexto"><br><br>
+                                  
+            <button onclick="leerMensaje()" class="boton">Ver Mensajes</button>
+            <button onclick="guardarMensaje()" class="boton">Enviar Mensaje</button>
+            
+        </div>
+        <div id="subtitulo">
+            <h2>Mensajes</h2>
+        </div>
+        
+        <div id="listaMensajes">
+                   
+
+        </div>
+    </div>
 </body>
 </html>
